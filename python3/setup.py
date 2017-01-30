@@ -11,7 +11,7 @@ from setuptools import setup
 
 setup(
     name         = "lsinf2172-inginious-utils",
-    version      = "1.0rc8",
+    version      = "1.0rc9",
     author       = "X. Gillard",
     author_email = "xavier.gillard [at] uclouvain.be",
     description  = "Helper classes to ease the writing of tests on inginious",
