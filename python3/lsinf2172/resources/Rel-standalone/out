@@ -1,0 +1,36 @@
+Opening database in ./DefaultRelDb
+If it doesn't exist, we'll try to create it.
+No custom relvars were found in /home/snijssen/Relplugins/relvars
+No custom relvars were found in /home/snijssen/courses/databases/software/Rel-standalone/./DefaultRelDb/Relplugins/relvars
+Database ./DefaultRelDb is open.
+Rel DBMS version 1.0.13 Beta
+Copyright (c) 2004 - 2016 Dave Voorhis
+All Rights Reserved
+For further information, please see http://reldb.org
+Rel is running on spirou
+using Oracle Corporation's Java version 1.8.0_111 from http://java.oracle.com/
+at /usr/lib/jvm/java-8-openjdk-amd64/jre
+on Linux version 4.8.0-rc5-nvmepatch for amd64
+with database format v0.
+Persistence is provided by Oracle Berkeley DB Java Edition version 7.0.6
+Rel comes with ABSOLUTELY NO WARRANTY; for details, type:
+	warranty FROM TUPLE FROM sys.Version
+This is free software, and you are welcome to redistribute it
+under certain conditions.
+For details, type:
+	redistribution FROM TUPLE FROM sys.Version
+To view the catalog, type:
+	sys.Catalog
+Ok.
+RELATION {Id INTEGER, Name CHARACTER} {
+	TUPLE {Id 1, Name "Anna"},
+	TUPLE {Id 2, Name "Bertram"},
+	TUPLE {Id 3, Name "Claire"}
+}Closing database in /home/snijssen/courses/databases/software/Rel-standalone/./DefaultRelDb/
+	Closing active tuple iterators in /home/snijssen/courses/databases/software/Rel-standalone/./DefaultRelDb/
+	Committing open transactions in /home/snijssen/courses/databases/software/Rel-standalone/./DefaultRelDb/
+	Closing relvars in /home/snijssen/courses/databases/software/Rel-standalone/./DefaultRelDb/
+	Purging temporary data in /home/snijssen/courses/databases/software/Rel-standalone/./DefaultRelDb/
+	Temporary data purged in /home/snijssen/courses/databases/software/Rel-standalone/./DefaultRelDb/
+	Closing environment in /home/snijssen/courses/databases/software/Rel-standalone/./DefaultRelDb/
+Database /home/snijssen/courses/databases/software/Rel-standalone/./DefaultRelDb/ is closed.

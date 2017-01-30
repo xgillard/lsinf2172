@@ -1,0 +1,4 @@
+# This manifest specifies what files need to be included in the dist files of
+# lsinf2172-inginious-utils package.
+include *.py
+recursive-include lsinf2172/resources *.jar *.txt
