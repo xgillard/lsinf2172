@@ -111,9 +111,13 @@ class DBMSContext:
         :param resource: path of the resource (what) that needs to be copied
         :param dest:     path of the location where to copy it
         '''
-        copy_anything = shutil.copytree if os.path.isdir(resource) else shutil.copy2
-        copy_anything(resource, dest)
-
+        if os.path.isdir(resource):
+            shutil.copytree(resource, dest)
+        else:
+            if not os.path.exists(os.path.dirname(dest)):
+                os.makedirs(os.path.dirname(dest))    
+            shutil.copy2(resource, dest)
+            
     def execute(self, statement):
         '''
         Executes one statement on the running database.
@@ -270,7 +274,8 @@ class SQL(DBMSContext):
                             to be spawned and executed inside a new container
                             (in a student context in inginious parlance).
         '''
-        super().__init__(database, '.', run_student)
+        home = './student/' if run_student else '.'
+        super().__init__(database, home, run_student)
 
     def command(self):
         return "sqlite3 {}".format(self.database())
