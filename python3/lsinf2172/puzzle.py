@@ -127,9 +127,9 @@ class Puzzle:
 
         for question in self._questions:
             problem_id = "question{}".format(question)
-            evaluation = [ evaluate_submission(question, db) for db in self._databases ]
+            evaluation = [ self.evaluate_submission(question, db) for db in self._databases ]
 
-            feedback   = to_rst([ x[1] for x in evaluation ])
+            feedback   = self.to_rst([ x[1] for x in evaluation ])
             nb_success = list(map(lambda x: x[0], evaluation)).count('success')
             pb_grade   = 100.0 * nb_success / len(evaluation)
 
