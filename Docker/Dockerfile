@@ -23,6 +23,6 @@ LABEL org.inginious.grading.name="databases"
 # RUN yum install -y sqlite
 
 # Add the lsinf2172 library that bundle REL already
-RUN pip3.5 install lsinf2172-inginious-utils==1.0rc10
+RUN pip3.5 install lsinf2172-inginious-utils==1.0rc11
 
 
