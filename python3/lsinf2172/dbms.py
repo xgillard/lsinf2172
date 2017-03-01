@@ -127,6 +127,7 @@ class DBMSContext:
         if self._result:
             raise ValueError("You can't keep executing statements after collecting the result")
         self._process.stdin.write( bytes(statement+'\n', 'utf-8') )
+        self._process.stdin.flush()
 
     def result(self):
         '''
